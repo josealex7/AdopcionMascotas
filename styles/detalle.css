@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #FEC7D7;
+}
+
+.contenedor-img-principal {
+    max-width: 800px;
+    background-color: rgb(231, 231, 231);
+    margin: auto;
+    margin-bottom: -10px;
+}
+
+.contenedor-img-principal img {
+    border: 3px solid rgba(119, 118, 118, 0.657);
+}
+
+.contenedor-detalle {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    max-width: 800px;
+    border-radius: 40px;
+    margin-top: -30px;
+}
+
+.contenedor-nombre-favorito {
+    width: 100%;
+    display: inline-flex;
+}
+
+.contenedor-nombre {
+    justify-content: center;
+    width: 50%;
+    padding: 20px 10px 12px;
+    display: inline-flex;
+}
+
+.contenedor-favorito {
+    width: 50%;
+    height: 60px;
+    text-align: center;
+    padding: 13px 10px 5px;
+}
+
+.contenedor-nombre label {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 10px 5px 20px;
+}
+
+.contenedor-nombre img {
+    padding-top: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.contenedor-favorito img {
+    object-fit: cover;
+    width: 60px;
+    filter: drop-shadow(5px 5px 13px rgb(71, 71, 71));
+}
+
+.contenedor-favorito button {
+    border: 0px;
+    background-color: white;
+}
+
+.contenedor-favorito img:hover {
+    width: 65px;
+}
+
+.contenedor-raza-edad {
+    display: inline-flex;
+    width: 100%;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 10px 0px 20px;
+}
+
+.contenedor-raza {
+    width: 50%;
+    text-align: center;
+}
+
+.contenedor-edad {
+    width: 50%;
+    text-align: center;
+}
+
+.contenedor-raza-edad img {
+    margin-top: 10px;
+}
+
+.contenedor-raza-edad label {
+    position: relative;
+    bottom: 15px;
+}
+
+.contenedor-ubicacion {
+    display: inline-flex;
+    /* max-width: 800px; */
+    width: 80%;
+    padding: 10px 40px;
+}
+
+.contenedor-ubicacion div {
+    margin: 10px 10px 10px 30px;
+    width: 100%;
+    min-width: 200px;
+    text-align: left;
+}
+
+.contenedor-ubicacion label {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.personalidad {
+    text-align: left;
+    padding: 20px 50px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.contenedor-personalidad {
+    display: inline-flex;
+}
+
+.contenedor-personalidad-div {
+    border: 4px solid rgb(207, 93, 236);
+    margin: 20px;
+    padding: 0px;
+    width: 120px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.historia {
+    margin: 10px 50px;
+    text-align: justify;
+    font-size: 30px;
+}
+
+.contenedor-contacto {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.contenedor-contacto div {
+    margin: 0px 10px;
+}
+
+.contenedor-contacto img {
+    width: 100px;
+}
+
+.contenedor-contacto label {
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+}
+
+.contenedor-boton-contactar {
+    height: 100px;
+}
+
+.boton-contactar {
+    position: relative;
+    top: 25px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 0px;
+    background-color: #0E172C;
+    color: white;
+}
+
+.boton-contactar:hover {
+    background-color: #0c1222;
+}
+
+.contenedor-label {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .contenedor-nombre {
+        padding: 20px 10px 12px;
+    }
+    .contenedor-img-principal {
+        width: 100%;
+        margin: auto;
+    }
+    .contenedor-img-principal img {
+        object-fit: cover;
+        width: 98%;
+        overflow: hidden;
+    }
+    .contenedor-detalle {
+        height: 100%;
+        width: 100%;
+    }
+    .contenedor-favorito {
+        width: 50%;
+        text-align: center;
+        padding: 10px 0px;
+        margin-left: 10px;
+    }
+    .contenedor-ubicacion label {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .imagen-personalidad {
+        width: 40px;
+        height: 30px;
+    }
+    .imagen-contacto {
+        width: 80px;
+    }
+    .imagen-contacto img {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .contenedor-raza {
+        width: 50%;
+        text-align: center;
+        margin: 0px;
+    }
+    .contenedor-edad {
+        text-align: left;
+        margin: 0px;
+    }
+    .contenedor-personalidad-div {
+        width: 70px;
+        height: 80px;
+        margin: 10px 2px;
+        padding: 20px;
+    }
+    .personalidad {
+        font-size: 22px;
+        padding: 20px 0px 0px 0px;
+    }
+    .contenedor-personalidad-label {
+        margin-top: 20px;
+    }
+    .historia {
+        margin: 5px 10px;
+        padding-top: 0;
+        font-size: 20px;
+        padding: 20px;
+    }
+    .contenedor-contacto div {
+        margin: 0px 5px 5px 5px;
+    }
+    .contenedor-nombre-contacto label {
+        font-size: 17px;
+    }
+    .boton-contactar {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .historia {
+        margin: 5px 10px;
+        font-size: 20px;
+        padding: 20px;
+    }
+    .contenedor-personalidad {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    .contenedor-personalidad-div {
+        width: 50px;
+        height: 80px;
+        margin: auto;
+        padding: 20px;
+    }
+    .contenedor-personalidad-div label {
+        margin-left: -12px;
+    }
+    .personalidad {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .historia {
+        padding-top: 0px;
+        font-size: 18px;
+    }
+    .contenedor-nombre-contacto label {
+        font-size: 14px;
+    }
+    .imagen-contacto {
+        width: 50px;
+    }
+    .imagen-contacto img {
+        padding: 19px 0px;
+    }
+    .contenedor-ubicacion {
+        padding: 10px 0px 10px 10px;
+    }
+}

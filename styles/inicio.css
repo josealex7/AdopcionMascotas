@@ -1,0 +1,234 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #FEC7D7;
+}
+
+.contenedor-principal {
+    text-align: center;
+    width: 100%;
+}
+
+ul {
+    background-color: white;
+}
+
+.boton-inicio-li button {
+    background-color: white;
+}
+
+.boton-inicio-li {
+    display: inline-block;
+    margin-top: 0;
+    padding: 0px 30px 20px;
+    background-color: white;
+}
+
+li button {
+    background-color: white;
+    border: 0px solid;
+}
+
+.boton-inicio {
+    background-color: #0E172C;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.inicio {
+    background-color: #0E172C;
+    padding: 2px 5px;
+    margin: 0px 0px 0px 5px;
+    border-radius: 30px;
+}
+
+.inicio svg {
+    background-color: #0E172C;
+    border-radius: 10px;
+}
+
+.home {
+    margin: 5px 15px 5px 0px;
+    background-color: #0E172C;
+    color: #85D1CE;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botones-li {
+    display: inline-block;
+    padding: 10px 30px 20px;
+    margin: 5px 10px 5px;
+    background-color: white;
+}
+
+.contenedor-principal img {
+    background-color: white;
+}
+
+main {
+    margin-bottom: 150px;
+}
+
+.main-principal h1 {
+    padding: 40px 40px 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0E172C;
+}
+
+.main-principal h3 {
+    padding: 5px 10px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0E172C;
+}
+
+button {
+    background-color: #FEC7D7;
+    border: 0px solid;
+}
+
+.boton-seleccion-animal {
+    background-color: #0E172C;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 15px;
+    height: 100px;
+    width: 200px;
+    margin: 10px 40px;
+}
+
+.boton-animal-2 {
+    background-color: turquoise;
+    padding: 8px 10px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.boton-animal-2 img {
+    background-color: turquoise;
+    border-radius: 50px;
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+}
+
+.categoria {
+    margin: 5px 15px 5px 10px;
+    background-color: #0E172C;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.boton-seleccion-animal:hover {
+    background-color: #0c1324;
+    height: 110px;
+    width: 210px;
+    margin: 0px 30px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.insertar-data {
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: justify center;
+    width: 330px;
+    margin: 30px 30px;
+}
+
+.texto-encima1 {
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+.texto-encima2 {
+    position: absolute;
+    bottom: 28px;
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+.contenedor img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.contenedor img:hover {
+    filter: grayscale(0.5);
+}
+
+@media only screen and (max-width: 700px) {
+    .botones-li {
+        padding: 10px 0px 20px;
+        margin: 5px 5px 5px;
+    }
+    .home {
+        margin: 5px 10px 5px 0px;
+    }
+    .boton-inicio-li {
+        padding: 0px 0px 10px;
+    }
+    .categoria {
+        margin: 5px 5px 5px 5px;
+    }
+    .boton-seleccion-animal {
+        height: 100px;
+        width: 170px;
+        margin: 10px 0px;
+    }
+    .boton-animal-2 {
+        padding: 8px 4px;
+        border-radius: 50px;
+        margin: 5px;
+    }
+    ul {
+        margin-left: -40px;
+    }
+    .contenedor {
+        width: 150px;
+        margin: 20px 5px;
+    }
+    .texto-encima1 {
+        bottom: 55px;
+        left: 20px;
+        font-size: 20px;
+    }
+    .texto-encima2 {
+        bottom: 30px;
+        left: 20px;
+        font-size: 16px;
+    }
+    .contenedor img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 40px;
+    }
+}
