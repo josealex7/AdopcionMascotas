@@ -2,6 +2,13 @@ let id_detalle = JSON.parse(localStorage.getItem('SeleccionDetalle'));
 let url;
 let data = [];
 const divHtml = document.getElementById('contenedor');
+let arrayFavorito = [];
+
+if (localStorage.getItem('arrayFavorito')) {
+    arrayFavorito = JSON.parse(localStorage.getItem('arrayFavorito'));
+}
+
+
 const identificarData = () => {
     if (id_detalle[1] === 'perro') {
         url = 'http://localhost:4001/perros/';
@@ -31,7 +38,7 @@ const showData = () => {
                     <img src="${element.genero}" alt="">
                 </div>
                 <div class="contenedor-favorito">
-                    <button>
+                    <button id="boton-favorito">
                 <img src="image/corazon.png" alt="">
             </button>
                 </div>
@@ -99,7 +106,52 @@ const showData = () => {
             `;
         }
     });
+    eventoFavorito();
+    pintarFavorito();
 }
 
 identificarData();
 getData();
+
+
+
+const pintarFavorito = () => {
+    let corazon = document.getElementById('boton-favorito');
+    arrayFavorito.forEach(element => {
+        if (element.id === id_detalle[0] && element.mascota === id_detalle[1]) {
+            corazon.innerHTML = ``;
+            corazon.innerHTML = `
+            <img src="image/corazonMorado.png" alt="">
+            `;
+        }
+    });
+
+
+}
+
+const agregarFavorito = () => {
+    let agregado = true;
+    arrayFavorito.forEach(element => {
+        if (element.id === id_detalle[0] && element.mascota === id_detalle[1]) {
+            agregado = false;
+        }
+    });
+    if (agregado) {
+        arrayFavorito.push({
+            'id': id_detalle[0],
+            'mascota': id_detalle[1]
+        });
+    }
+
+
+    localStorage.setItem('arrayFavorito', JSON.stringify(arrayFavorito));
+    location.reload();
+}
+
+const eventoFavorito = () => {
+    let botonFavorito = document.getElementById('boton-favorito');
+    botonFavorito.addEventListener('click', e => {
+        e.preventDefault();
+        agregarFavorito();
+    })
+}

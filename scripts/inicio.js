@@ -1,11 +1,13 @@
 let url;
 let data = [];
 let mascotaDetalle = [];
+let botonCorazon = document.getElementById('boton-corazon');
 const div = document.getElementById('div-data');
 let botonPerro = document.getElementById('perro');
+
 botonPerro.addEventListener('click', e => {
     e.preventDefault();
-    url = 'http://localhost:4001/perros/';
+    url = 'http://localhost:4000/perros/';
     getData();
     showData();
 
@@ -14,7 +16,7 @@ botonPerro.addEventListener('click', e => {
 let botonGato = document.getElementById('gato');
 botonGato.addEventListener('click', e => {
     e.preventDefault();
-    url = 'http://localhost:4000/gatos/';
+    url = 'http://localhost:4001/gatos/';
     getData();
     showData();
 })
@@ -53,3 +55,14 @@ const eventoDetalle = () => {
         });
     })
 }
+
+botonCorazon.addEventListener('click', e => {
+    e.preventDefault();
+    window.location.href = 'favoritos.html';
+})
+
+let botonPerfil = document.getElementById('boton-perfil');
+botonPerfil.addEventListener('click', e => {
+    e.preventDefault();
+    window.location.href = "perfil.html";
+})
