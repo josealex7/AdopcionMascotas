@@ -5,6 +5,10 @@
     background-color: #FEC7D7;
 }
 
+h1 {
+    padding: 30px 5px 20px;
+}
+
 .contenedor-principal {
     text-align: center;
     width: 100%;
