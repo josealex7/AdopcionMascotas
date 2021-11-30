@@ -1,0 +1,240 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #FEC7D7;
+}
+
+.titulo {
+    margin: 40px 10px;
+}
+
+.boton-mensaje {
+    border: 0px;
+    padding: 0;
+}
+
+.boton-mensaje:hover {
+    background-color: grey;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.contenedor-mensaje {
+    background-color: white;
+    height: 110px;
+    width: 100%;
+    display: inline-flex;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.contenedor-mensaje img {
+    width: 100px;
+    height: 100px;
+    margin: 5px 0px 5px 20px;
+    background-color: white;
+}
+
+main div,
+main label,
+main p {
+    background-color: white;
+    margin: 10px 5px;
+    font-size: 20px;
+}
+
+.contenedor-mensaje-hora {
+    width: 90%;
+    background-color: white;
+}
+
+.nombre {
+    position: relative;
+    left: -100px;
+    font-weight: bold;
+}
+
+.hora {
+    position: relative;
+    right: -60px;
+    color: grey;
+}
+
+p {
+    text-align: left;
+}
+
+.contenedor-principal {
+    text-align: center;
+    width: 100%;
+}
+
+.contenedor-principal img {
+    background-color: white;
+}
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    margin: 30px 30px;
+}
+
+main {
+    margin-bottom: 120px;
+    max-width: 550px;
+    margin: auto;
+}
+
+.texto-encima1 {
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+.texto-encima2 {
+    position: absolute;
+    bottom: 28px;
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+ul {
+    background-color: white;
+}
+
+.boton-inicio-li {
+    display: inline-block;
+    margin-top: 0;
+    padding: 0px 30px 20px;
+    background-color: white;
+}
+
+li button {
+    background-color: white;
+    border: 0px solid;
+}
+
+.boton-inicio {
+    background-color: #0E172C;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.inicio {
+    background-color: #0E172C;
+    padding: 2px 5px;
+    margin: 0px 0px 0px 5px;
+    border-radius: 30px;
+}
+
+.inicio img {
+    background-color: #0E172C;
+    border-radius: 10px;
+}
+
+.home {
+    margin: 5px 15px 5px 0px;
+    background-color: #0E172C;
+    color: #85D1CE;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botones-li {
+    display: inline-block;
+    padding: 10px 30px 20px;
+    margin: 5px 10px 5px;
+    background-color: white;
+}
+
+.botones-li img {
+    background-color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .botones-li {
+        padding: 10px 0px 20px;
+        margin: 5px 5px 5px;
+    }
+    .home {
+        margin: 5px 10px 5px 0px;
+    }
+    .boton-inicio-li {
+        padding: 0px 0px 10px;
+    }
+    ul {
+        margin-left: -40px;
+    }
+    .contenedor {
+        width: 180px;
+        margin: 20px 5px;
+    }
+    .contenedor-mensaje {
+        width: 90%;
+    }
+    main div,
+    main label,
+    main p {
+        font-size: 15px;
+    }
+    .contenedor-mensaje-hora {
+        width: 90%;
+        background-color: white;
+    }
+    .nombre {
+        left: -35px;
+    }
+    .hora {
+        right: -25px;
+    }
+    main div,
+    main label,
+    main p {
+        font-size: 13px;
+    }
+    .contenedor-mensaje-hora {
+        width: 90%;
+        background-color: white;
+    }
+    .nombre {
+        left: -19px;
+    }
+    .hora {
+        right: -15px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .contenedor-principal img {
+        width: 30px;
+    }
+    .home {
+        font-size: 15px;
+    }
+    form label {
+        position: relative;
+        left: -70px;
+        font-size: 25px;
+    }
+    .contenedor-mensaje img {
+        width: 80px;
+        height: 80px;
+        margin: 15px 0px 5px 10px;
+    }
+}

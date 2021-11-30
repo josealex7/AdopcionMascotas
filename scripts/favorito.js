@@ -42,15 +42,3 @@ const pintarDatos = (data, id) => {
     });
 }
 obtenerData();
-
-let botonInicio = document.getElementById('inicio');
-botonInicio.addEventListener('click', e => {
-    e.preventDefault();
-    window.location.href = "inicio.html";
-})
-
-let botonPerfil = document.getElementById('boton-perfil');
-botonPerfil.addEventListener('click', e => {
-    e.preventDefault();
-    window.location.href = "perfil.html";
-})

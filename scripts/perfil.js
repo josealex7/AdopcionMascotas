@@ -2,7 +2,6 @@ let url = " http://localhost:4002/usuarios/";
 let data = [];
 let id;
 let arrayUpdate = {};
-let botonCorazon = document.getElementById('boton-corazon');
 
 
 const getData = async() => {
@@ -13,12 +12,20 @@ const getData = async() => {
 }
 
 const mostrarData = () => {
+    let nombreApellido = "";
     data.forEach(element => {
         id = element.id;
         document.getElementById('nombre').value = element.nombre;
         document.getElementById('apellido').value = element.apellido;
         document.getElementById('correo').value = element.correo;
+        nombreApellido = element.nombre + " " + element.apellido;
     })
+    let tituloNombre = document.getElementById('nombre-label');
+    tituloNombre.innerHTML = `
+        <label>${nombreApellido}</label>
+
+    
+    `;
 }
 
 const enviarData = async() => {
@@ -51,14 +58,3 @@ botonGuardar.addEventListener('click', e => {
     e.preventDefault();
     enviarData();
 });
-
-botonCorazon.addEventListener('click', e => {
-    e.preventDefault();
-    window.location.href = 'favoritos.html';
-})
-
-let botonInicio = document.getElementById('inicio');
-botonInicio.addEventListener('click', e => {
-    e.preventDefault();
-    window.location.href = "inicio.html";
-})
