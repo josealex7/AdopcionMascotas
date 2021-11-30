@@ -12,6 +12,7 @@
 .boton-mensaje {
     border: 0px;
     padding: 0;
+    margin: 10px;
 }
 
 .boton-mensaje:hover {
