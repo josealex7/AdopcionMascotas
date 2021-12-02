@@ -11,9 +11,9 @@ if (localStorage.getItem('arrayFavorito')) {
 
 const identificarData = () => {
     if (id_detalle[1] === 'perro') {
-        url = 'http://localhost:4001/perros/';
+        url = 'http://localhost:4000/perros/';
     } else {
-        url = 'http://localhost:4000/gatos/';
+        url = 'http://localhost:4001/gatos/';
     }
 }
 
@@ -98,7 +98,9 @@ const showData = () => {
                         </div>
                     </div>
                     <div class="contenedor-boton-contactar">
+                        <a href="chat.html">
                         <button class="boton-contactar">Contactar</button>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
-let urlPerro = "http://localhost:4001/perros/";
-let urlGato = "http://localhost:4000/gatos/";
+let urlPerro = "http://localhost:4000/perros/";
+let urlGato = "http://localhost:4001/gatos/";
 let arrayFavorito = [];
 let divFavorito = document.getElementById('div-data');
 

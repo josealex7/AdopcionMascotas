@@ -6,7 +6,7 @@ let botonPerro = document.getElementById('perro');
 
 botonPerro.addEventListener('click', e => {
     e.preventDefault();
-    url = 'http://localhost:4001/perros/';
+    url = 'http://localhost:4000/perros/';
     getData();
     showData();
 
@@ -15,7 +15,7 @@ botonPerro.addEventListener('click', e => {
 let botonGato = document.getElementById('gato');
 botonGato.addEventListener('click', e => {
     e.preventDefault();
-    url = 'http://localhost:4000/gatos/';
+    url = 'http://localhost:4001/gatos/';
     getData();
     showData();
 })
